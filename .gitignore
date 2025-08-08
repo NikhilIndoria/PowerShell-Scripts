@@ -1,0 +1,7 @@
+```gitignore
+*.log
+*.tmp
+*.bak
+*.ps1~
+*.DS_Store
+Thumbs.db
