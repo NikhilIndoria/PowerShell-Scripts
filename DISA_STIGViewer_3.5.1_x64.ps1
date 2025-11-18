@@ -115,7 +115,7 @@ Try {
     [String]$appScriptVersion = '1.0.0'
     [String]$appScriptDate = '15/09/2024'
     [String]$appScriptAuthor = 'Nikhil Indoria'
-    [string]$PackagingCompany = 'Unisys'
+    [string]$PackagingCompany = '<Company Name>'
     [string]$Licensed = 'NA'
     [String]$pkgDetails = 'DISA_STIG_Viewer-3_3.5.1_x64'
     ##*===============================================
@@ -319,3 +319,4 @@ Catch {
     Show-DialogBox -Text $mainErrorMessage -Icon 'Stop'
     Exit-Script -ExitCode $mainExitCode
 }
+
