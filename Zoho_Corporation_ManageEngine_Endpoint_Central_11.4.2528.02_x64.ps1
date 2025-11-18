@@ -115,7 +115,7 @@ Try {
     [String]$appScriptVersion = '1.0.0'
     [String]$appScriptDate = '08/09/2024'
     [String]$appScriptAuthor = 'Nikhil Indoria'
-    [string]$PackagingCompany = 'Unisys'
+    [string]$PackagingCompany = '<Company Name>'
     [string]$Licensed = 'NA'
     [String]$pkgDetails = 'Zoho_Corporation_ManageEngine_Endpoint_Central_11.4.2528.02_x64'
     ##*===============================================
@@ -319,3 +319,4 @@ Catch {
     Show-DialogBox -Text $mainErrorMessage -Icon 'Stop'
     Exit-Script -ExitCode $mainExitCode
 }
+
