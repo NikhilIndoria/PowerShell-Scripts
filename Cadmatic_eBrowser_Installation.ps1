@@ -15,7 +15,7 @@ If ($useDefaultMsi) {
 
 ## <Perform Installation tasks here>
 
-Execute-MSI -path "$dirFiles\download-ebrowser-x64.msi" -Parameters '/qn'
+Execute-MSI -path "$dirFiles\<Path>" -Parameters '/qn'
 
 ##*===============================================
 ##* POST-INSTALLATION
@@ -58,7 +58,7 @@ If ($useDefaultMsi) {
 
 # Execute-Process -path "$env:ProgramFiles\Bosch\ConfigManager\uninst_VL_ConfigManager.exe" -Parameters '/S /noreboot' -WindowStyle Hidden -NoWait
 
-Execute-MSI -Action 'Uninstall' -Path "{0EF6B7DE-D4BB-4219-A5EB-C1BE1E371F14}" -Parameters '/qn'
+Execute-MSI -Action 'Uninstall' -Path "{Product_Code}" -Parameters '/qn'
 
 ##*===============================================
 ##* POST-UNINSTALLATION
@@ -67,3 +67,4 @@ Execute-MSI -Action 'Uninstall' -Path "{0EF6B7DE-D4BB-4219-A5EB-C1BE1E371F14}" -
 
 ## <Perform Post-Uninstallation tasks here>
 }
+
