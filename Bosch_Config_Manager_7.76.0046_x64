@@ -28,7 +28,7 @@ If ($useDefaultMsi) {
 
 ## <Perform Installation tasks here>
 
-Execute-Process -path "$dirFiles\Setup_ConfigManager_7.76.46_signed.exe" -Parameters '/S' -WindowStyle Hidden
+Execute-Process -path "$dirFiles\<Path>" -Parameters '/S' -WindowStyle Hidden
 
 ##*===============================================
 ##* POST-INSTALLATION
@@ -70,4 +70,5 @@ If ($useDefaultMsi) {
 ## <Perform Uninstallation tasks here>
 
 Execute-Process -path "$env:ProgramFiles\Bosch\ConfigManager\uninst_VL_ConfigManager.exe" -Parameters '/S /noreboot' -WindowStyle Hidden -NoWait
+
 
