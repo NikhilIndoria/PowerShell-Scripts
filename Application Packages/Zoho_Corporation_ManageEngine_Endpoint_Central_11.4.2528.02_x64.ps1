@@ -62,7 +62,7 @@ If ($useDefaultMsi) {
 
 ## <Perform Uninstallation tasks here>
 
-Start-Process -FilePath "$envProgramFilesX86:\InstallShield Installation Information\{BCEF6F6B-E530-4D5E-8DB7-C54F96DB9D2A}\ManageEngine_Endpoint_Central_EvaluationKit.exe" -ArgumentList "-runfromtemp -l0x0409 uninstall -l9 -removeonly -silent" -Wait
+Start-Process -FilePath "$envProgramFilesX86:\InstallShield Installation Information\{Product-Code}\ManageEngine_Endpoint_Central_EvaluationKit.exe" -ArgumentList "-runfromtemp -l0x0409 uninstall -l9 -removeonly -silent" -Wait
 
 
 
@@ -75,3 +75,4 @@ Start-Process -FilePath "$envProgramFilesX86:\InstallShield Installation Informa
 
 
 }
+
